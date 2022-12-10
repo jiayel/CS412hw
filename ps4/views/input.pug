@@ -1,0 +1,37 @@
+html
+    head
+        title Current Weather
+    body
+        form(action = '/ps4/promise', method = 'POST')
+            div
+                label Longitude
+                input(name = 'lon' value = "")
+                br
+                label Latitude
+                input(name = 'lat' value = "")
+            br
+            button(type = "submit") Load Weather (promise)
+        br
+        br
+        form(action = '/ps4/async', method = 'POST')
+            div
+                label Longitude
+                input(name = 'lon' value = "")
+                br
+                label Latitude
+                input(name = 'lat' value = "")
+            br
+            button(type = "submit") Load Weather (Async)
+
+        br
+        br
+        form(action = '/ps4/callback', method = 'POST')
+            div
+                label Longitude
+                input(name = 'lon' value = "")
+                br
+                label Latitude
+                input(name = 'lat' value = "")
+            br
+            button(type = "submit") Load Weather (Callback)
+
